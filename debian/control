@@ -1,0 +1,42 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: anon-shared-build-sanity-checks
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git
+Homepage: https://github.com/Whonix/anon-shared-build-sanity-checks
+Vcs-Browser: https://github.com/Whonix/anon-shared-build-sanity-checks
+Vcs-Git: https://github.com/Whonix/anon-shared-build-sanity-checks.git
+Standards-Version: 3.9.4
+
+Package: anon-shared-build-sanity-checks
+Architecture: all
+Depends: sudo, dpkg, debsums, ${misc:Depends}
+Description: Sanity Tests for Anonymity Linux Distribution builds
+ Providing a chroot-pre.d and a chroot-post.d script running multiple sanity
+ tests. Useful, optional integrity check.
+ .
+ Running "sync", which is a very basic function, which should always succeed.
+ .
+ Running "dpkg --audit", which should exit 0 and output nothing if everything
+ is okay.
+ .
+ Running "dpkg --configure -a" to check if the system is functional and to see,
+ that no packages require manual configuration.
+ .
+ Checking if "sysctcl -p" runs without an error.
+ .
+ Benchmarking 'sudo -u root echo "This is a test echo."' using 'time' for
+ debugging output during run.
+ .
+ Trying to find out if there are packages (or debs) which do not have an MD5
+ sums file using "debsums --list-missing".
+ .
+ Trying to find out if there are any packages (or debs) with missing files
+ using "debsums --silent".
+ .
+ Listing changed configuration files using "debsums --config --silent" for
+ debugging output during run.
