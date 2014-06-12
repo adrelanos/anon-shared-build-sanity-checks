@@ -14,7 +14,7 @@ Standards-Version: 3.9.4
 
 Package: anon-shared-build-sanity-checks
 Architecture: all
-Depends: sudo, dpkg, debsums, ${misc:Depends}
+Depends: sudo, debsums, ${misc:Depends}
 Description: Sanity Tests for Anonymity Linux Distribution builds
  Providing a chroot-pre.d and a chroot-post.d script running multiple sanity
  tests. Useful, optional integrity check.
