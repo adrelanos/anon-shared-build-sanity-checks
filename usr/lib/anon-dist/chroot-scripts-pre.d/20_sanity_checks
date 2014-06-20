@@ -75,6 +75,7 @@ apt-get \
    --yes \
    --no-install-recommends \
    --reinstall \
+   install \
    tzdata
 
 true "Check non-interactively reconfiguring tzdata. Should run non-interactively."
