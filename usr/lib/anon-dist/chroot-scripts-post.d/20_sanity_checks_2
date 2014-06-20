@@ -39,7 +39,7 @@ for skip_script in $SKIP_SCRIPTS; do
 done
 unset skip_script
 
-/usr/share/whonix/chroot-scripts-pre.d/20_sanity_checks
+/usr/lib/anon-dist/chroot-scripts-pre.d/20_sanity_checks
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.
 exit 0
