@@ -1,0 +1,192 @@
+commit 6932703f696337cac0800e0ebb89788897dd9af9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:26 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit 6cc961f11a0c0c1f82c7030bb593e6bfe6cb9730
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:32 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit 7a1e86d1841870b1876844a51a58f0e124e38fef
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:33:29 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 1886f7211b58f8a0ab6b1d7287d2ed1bbe90748d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:06 2014 +0000
+
+    updated generic makefile
+
+commit 1135a35b6f2e9b28b3e88f745f9a37992bc89520
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 9 14:21:59 2014 +0000
+
+    workaround for "bash: Shellshock fix breaks bash function exporting" - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=763164
+
+commit 3b9e117b9ff84c0cfad06730f815c37991dadf9f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 28 22:35:14 2014 +0000
+
+    makefile: refactoring, avoid using IFS
+
+commit 1f1e00b22d8d447694578805bddd75d06c2c402d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 25 01:58:49 2014 +0000
+
+    makefile:
+    - make debdist; make undebdist
+    - cleanup
+    - refactoring
+
+commit 5873195e11a1186d41c54d48f6a2c206f356fe30
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 23 22:43:00 2014 +0000
+
+    makefile:
+    - new target "make undist", which deletes the upstream tarball
+    - $DISTDIR variable for make (un)dist, which defaults to ".." and can be used to create upstream tarballs in arbitrary locations
+    - refactoring, all function names and global variables now start with "make_" to make the script `source`ing friendly
+    - made `source`able
+
+commit aadd8ab882430621bd9791ba353bb98c071066bb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 13 12:36:49 2014 +0000
+
+    readme
+
+commit 3051d7179e567ba0965de3e8de662de8fd79c333
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 18:52:31 2014 +0000
+
+    makefile: added new feature "make deb-chl-bumpup" - Bump upstream version number in debian/changelog.
+
+commit fa697f5de09d96a174b1686ede4df6003c87675e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:54:21 2014 +0000
+
+    Updated debian/changelog.
+
+commit 1d1a180d02c8d76817f4d40a73dea8fcc0e71b3f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:47:23 2014 +0000
+
+    Fixed changelog date.
+
+commit d9ca3b70a3d39a223ed8a5f282ae8848249ac923
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 18:03:22 2014 +0000
+
+    bump version number
+
+commit 45003c35fafc8b369acb44b77eaa368ac024a378
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 13:35:12 2014 +0000
+
+    Implemented make deb-icup: Combination of make deb-pkg, make deb-pkg-install and make deb-pkg-cleanup.
+
+commit 3db6abc418419f4e53f9fe42f7ff39261c5eb561
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 12:42:23 2014 +0000
+
+    packaging
+
+commit fe1c75970b0ea5dd372bab19b6f84fe177332685
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 04:01:07 2014 +0000
+
+    packaging
+
+commit 6ee73d73e0592d1aeb8829b303a74266d59b2b72
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:26:33 2014 +0000
+
+    packaging
+
+commit f711d9584f3948240beac62150abd7e9edf48558
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:16:00 2014 +0000
+
+    packaging: removed build dependency on git, since the .git folder won't be included in the upstream tarball.
+
+commit 34b0051d3f40e6e921789412a582082fdf342ba3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 17:10:58 2014 +0000
+
+    packaging
+
+commit 72b6ecefe4d0e24a9dffed8d21740681b236d66b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 15:34:13 2014 +0000
+
+    packaging
+
+commit 2bd38e2db808f156377b607bfd42450ec1796e12
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 11 03:35:26 2014 +0000
+
+    run echo test twice
+
+commit 86c65b162599efbc2343f6a3f1357bd83484c088
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 6 13:30:41 2014 +0000
+
+    quotes
+
+commit 59282875313fbcd16dae4f93b1b8ed402915794d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 6 13:22:22 2014 +0000
+
+    use $BASH_SOURCE instead of $0
+
+commit 984c1d7179d933d8c123368b55a5019a6aa5b0e6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 5 08:09:41 2014 +0000
+
+    Bumped debian revision number to avoid lintian warning "new-package-should-close-itp-bug" so we can use lintian --fail-on-warnings as sanity test.
+
+commit 179849d252394f97fa382823a8f5facb3d06c365
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 24 15:45:09 2014 +0000
+
+    added debian epoch; added dotglob
+
+commit 4ee9d8945c7533360f92ac6c8241aa631b207044
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jun 20 17:21:38 2014 +0000
+
+    fix
+
+commit cf6facde3af5f4efbb7fd626b3217063f4845a84
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jun 20 14:30:43 2014 +0000
+
+    fix path
+
+commit a52c69e874711175e05fb8a99023a20d2350d319
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jun 12 14:28:11 2014 +0000
+
+    no longer depend on essential package dpkg to fix a lintian warning
+
+commit 2ed992aa9c5495cd41b0a3dfd8ed270adbd55fed
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 3 18:27:22 2014 +0000
+
+    readme
+
+commit a40ab23e5adb15ffa96e16c3acdaeb54f06d8531
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 15:38:28 2014 +0000
+
+    readme
+
+commit b7b1577644285f8b1d58bab0fe80c1404c98157d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 31 14:00:47 2014 +0000
+
+    initial import from https://github.com/Whonix/Whonix
